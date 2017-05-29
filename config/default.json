@@ -1,6 +1,6 @@
 {
-    "appSecret": "",
-    "pageAccessToken": "",
-    "validationToken": "",
-    "serverURL": ""
+    "appSecret": "d5768f1da0c3ebc6b1fb286b7523caff",
+    "pageAccessToken": "EAAGWH5Hh7IMBAKkXf7D2Q7P3ZAFkZApxWYxnMv3G7xZCe1txYc1eSqSyOZBluroV0ezaPlt8OZCZAnI5bfbKDJhdazrBMovvWZAxPjFdPrFdZB3rno6E0NvnxFOlE5R4BpMYGZCcuVROiKWpo5o7sk6iSUfQVrtDDOu5LnWxpE95YIAZDZD",
+    "validationToken": "boing",
+    "serverURL": "https://infinite-plains-48280.herokuapp.com"
 }
