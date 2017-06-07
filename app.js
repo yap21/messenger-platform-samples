@@ -817,7 +817,8 @@ function sendGameMessage() {
     },
     "message": {
       "text": "hello, world!"
-    }
+    },
+    "tag": "boingboing"
   };
 
   callSendAPI(messageData);
@@ -832,7 +833,7 @@ function sendGamePlay() {
       "id": "1372259446195631"
     },
     "recipient": {
-      "id": "550259662029115"
+      "id": "1372259446195631"
     },
     "timestamp": 1469111400000,
     "game_play": {
