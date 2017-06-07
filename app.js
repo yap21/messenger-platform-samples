@@ -817,8 +817,7 @@ function sendGameMessage() {
     },
     "message": {
       "text": "hello, world!"
-    },
-    "tag": "boingboing"
+    }
   };
 
   callSendAPI(messageData);
