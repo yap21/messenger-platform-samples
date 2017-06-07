@@ -56,6 +56,16 @@ if (!(APP_SECRET && VALIDATION_TOKEN && PAGE_ACCESS_TOKEN && SERVER_URL)) {
   process.exit(1);
 }
 
+app.get('/gameMessage', function(req, res) {
+  sendGameMessage();
+  res.sendStatus(200);
+});
+
+app.get('/test', function(req, res) {
+  sendGamePlay();
+  res.sendStatus(200);
+});
+
 /*
  * Use your own validation token. Check that the token used in the Webhook 
  * setup is the same token used here.
@@ -793,6 +803,47 @@ function sendAccountLinking(recipientId) {
       }
     }
   };  
+
+  callSendAPI(messageData);
+}
+
+/*
+ * Send Game message
+ */
+function sendGameMessage() {
+  var messageData = {
+    "recipient": {
+      "id": "446537312365699"
+    },
+    "message": {
+      "text": "hello, world!"
+    }
+  };
+
+  callSendAPI(messageData);
+}
+
+/*
+ * Send Game Play
+ */
+function sendGamePlay() {
+  var messageData = {
+    "sender": {
+      "id": "USER_ID"
+    },
+    "recipient": {
+      "id": "PAGE_ID"
+    },
+    "timestamp": 1469111400000,
+    "game_play": {
+      "game_id": "446537312365699",
+      "player_id": "1837307476295559",
+      "context_type": "SOLO",
+      "context_id": "CONTEXT-ID",
+      "score": 10001,
+      "payload": "PAYLOAD"
+    }
+  };
 
   callSendAPI(messageData);
 }
