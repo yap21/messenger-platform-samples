@@ -813,7 +813,7 @@ function sendAccountLinking(recipientId) {
 function sendGameMessage() {
   var messageData = {
     "recipient": {
-      "id": "446537312365699"
+      "id": "391914124523477"
     },
     "message": {
       "text": "hello, world!"
