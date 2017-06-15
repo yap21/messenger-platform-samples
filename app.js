@@ -825,9 +825,6 @@ function sendGameMessage() {
   callSendAPI(messageData);
 }
 
-/*
- * Send Game Play
- */
 function sendButton() {
   var messageData = {
     "sender": {
@@ -836,6 +833,9 @@ function sendButton() {
     "recipient": {
       "id": "225820317929761"
     },
+    "message": {
+      "text": "send button"
+    }
     "buttons":[
       {
         "type":"game_play",
