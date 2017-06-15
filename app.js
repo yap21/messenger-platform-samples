@@ -93,6 +93,8 @@ app.get('/webhook', function(req, res) {
 app.post('/webhook', function (req, res) {
   var data = req.body;
 
+  console.log('>>>  ' + data.object);
+
   // Make sure this is a page subscription
   if (data.object == 'page') {
     // Iterate over each entry
@@ -128,18 +130,6 @@ app.post('/webhook', function (req, res) {
     // successfully received the callback. Otherwise, the request will time out.
     res.sendStatus(200);
   }
-});
-
-app.post('/messaging_game_plays', function (req, res) {
-  var data = req.body;
-  console.log(data);
-  res.sendStatus(200);
-});
-
-app.post('/game_play', function (req, res) {
-  var data = req.body;
-  console.log(data);
-  res.sendStatus(200);
 });
 
 /*
