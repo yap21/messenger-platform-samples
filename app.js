@@ -128,7 +128,18 @@ app.post('/webhook', function (req, res) {
     // successfully received the callback. Otherwise, the request will time out.
     res.sendStatus(200);
   }
-  console.log(data.object);
+});
+
+app.post('/messaging_game_plays', function (req, res) {
+  var data = req.body;
+  console.log(data);
+  res.sendStatus(200);
+});
+
+app.post('/game_play', function (req, res) {
+  var data = req.body;
+  console.log(data);
+  res.sendStatus(200);
 });
 
 /*
