@@ -829,7 +829,7 @@ function sendGameMessage() {
   request({
     uri: 'https://graph.facebook.com/v2.6/391914124523477',
     qs: { access_token: PAGE_ACCESS_TOKEN },
-    method: 'POST',
+    method: 'GET',
     json: messageData
 
   }, function (error, response, body) {
