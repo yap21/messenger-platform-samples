@@ -827,11 +827,8 @@ function sendGameMessage() {
 
 function sendButton() {
   var messageData = {
-    "sender": {
-      "id": "1586643971367725"
-    },
     "recipient": {
-      "id": "225820317929761"
+      "id": "1586643971367725"
     },
     "message": {
       "text": "send button"
