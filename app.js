@@ -838,7 +838,7 @@ function sendButton() {
           "elements":[
             {
               "title": "boingboing",
-              "image_url": "https://petersfancybrownhats.com/company_image.png",
+              "image_url": SERVER_URL + "/assets/1024x1024.png",
               "subtitle": "We\'ve got the right hat for everyone.",
               "buttons": [
                 {
