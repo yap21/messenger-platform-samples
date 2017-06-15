@@ -56,16 +56,6 @@ if (!(APP_SECRET && VALIDATION_TOKEN && PAGE_ACCESS_TOKEN && SERVER_URL)) {
   process.exit(1);
 }
 
-app.get('/gameMessage', function(req, res) {
-  sendGameMessage();
-  res.sendStatus(200);
-});
-
-app.get('/test', function(req, res) {
-  sendGamePlay();
-  res.sendStatus(200);
-});
-
 /*
  * Use your own validation token. Check that the token used in the Webhook 
  * setup is the same token used here.
@@ -810,21 +800,20 @@ function sendAccountLinking(recipientId) {
   callSendAPI(messageData);
 }
 
+app.get('/gameMessage', function(req, res) {
+  sendGameMessage();
+  res.sendStatus(200);
+});
+
+app.get('/button', function(req, res) {
+  sendButton();
+  res.sendStatus(200);
+});
+
 /*
  * Send Game message
  */
 function sendGameMessage() {
-  /*var messageData = {
-    "recipient": {
-      "id": "1372259446195631"
-    },
-    "message": {
-      "text": "hello, world!"
-    }
-  };
-
-  callSendAPI(messageData);*/
-
   var messageData = {
     "recipient": {
       "id": "1586643971367725"
@@ -833,30 +822,30 @@ function sendGameMessage() {
       "text": "hello, world!"
     }
   };
-
   callSendAPI(messageData);
 }
 
 /*
  * Send Game Play
  */
-function sendGamePlay() {
+function sendButton() {
   var messageData = {
     "sender": {
-      "id": "1372259446195631"
+      "id": "1586643971367725"
     },
     "recipient": {
-      "id": "1372259446195631"
+      "id": "225820317929761"
     },
-    "timestamp": 1469111400000,
-    "game_play": {
-      "game_id": "446537312365699",
-      "player_id": "1837307476295559",
-      "context_type": "SOLO",
-      "context_id": "CONTEXT-ID",
-      "score": 10001,
-      "payload": "PAYLOAD"
-    }
+    "buttons":[
+      {
+        "type":"game_play",
+        "title":"boingboing play",
+        "payload":"DEVELOPER_DEFINED_PAYLOAD",
+        "game_metadata": { // Only one of the below
+          "player_id": "1837307476295559"
+        }
+      }
+    ]
   };
 
   callSendAPI(messageData);
