@@ -835,25 +835,29 @@ function sendButton() {
         "type":"template",
         "payload":{
           "template_type":"generic",
-          "title":"boingboing",
-          "image_url":"https://petersfancybrownhats.com/company_image.png",
-          "subtitle":"We\'ve got the right hat for everyone.",
-          "default_action": {
-            "type": "web_url",
-            "url": "https://peterssendreceiveapp.ngrok.io/view?item=103",
-            "messenger_extensions": true,
-            "webview_height_ratio": "tall",
-            "fallback_url": "https://peterssendreceiveapp.ngrok.io/"
-          },
-          "buttons":[
+          "elements":[
             {
-              "type":"game_play",
-              "title":"Play",
-              "payload":"DEVELOPER_DEFINED_PAYLOAD",
-              "game_metadata": { // Only one of the below
-                "player_id": "1350682155011232"
-                //"context_id": "1297117840396058"
-              }
+              "title": "boingboing",
+              "image_url": "https://petersfancybrownhats.com/company_image.png",
+              "subtitle": "We\'ve got the right hat for everyone.",
+              "default_action": {
+                "type": "web_url",
+                "url": "https://peterssendreceiveapp.ngrok.io/view?item=103",
+                "messenger_extensions": true,
+                "webview_height_ratio": "tall",
+                "fallback_url": "https://peterssendreceiveapp.ngrok.io/"
+              },
+              "buttons": [
+                {
+                  "type": "game_play",
+                  "title": "Play",
+                  "payload": "DEVELOPER_DEFINED_PAYLOAD",
+                  "game_metadata": { // Only one of the below
+                    "player_id": "1350682155011232"
+                    //"context_id": "1297117840396058"
+                  }
+                }
+              ]
             }
           ]
         }
