@@ -826,31 +826,15 @@ function sendGameMessage() {
   callSendAPI(messageData);*/
 
   var messageData = {
-    "fields": "first_name,last_name,profile_pic,locale,timezone,gender"
+    "recipient": {
+      "id": "1586643971367725"
+    },
+    "message": {
+      "text": "hello, world!"
+    }
   };
 
-  request({
-    uri: 'https://graph.facebook.com/v2.6/391914124523477',
-    qs: { access_token: PAGE_ACCESS_TOKEN },
-    method: 'GET',
-    json: messageData
-
-  }, function (error, response, body) {
-    if (!error && response.statusCode == 200) {
-      var recipientId = body.recipient_id;
-      var messageId = body.message_id;
-
-      if (messageId) {
-        console.log("Successfully sent message with id %s to recipient %s",
-            messageId, recipientId);
-      } else {
-        console.log("Successfully called Send API for recipient %s",
-            recipientId);
-      }
-    } else {
-      console.error("Failed calling Send API", response.statusCode, response.statusMessage, body.error);
-    }
-  });
+  callSendAPI(messageData);
 }
 
 /*
