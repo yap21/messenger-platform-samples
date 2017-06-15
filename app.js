@@ -830,17 +830,26 @@ function sendButton() {
     "recipient": {
       "id": "1941444229206487"
     },
-    "buttons":[
-      {
-        "type":"game_play",
-        "title":"Play",
-        "payload":"DEVELOPER_DEFINED_PAYLOAD",
-        "game_metadata": { // Only one of the below
-          "player_id": "1350682155011232",
-          "context_id": "1297117840396058"
+    "message":{
+      "attachment":{
+        "type":"template",
+        "payload":{
+          "template_type":"button",
+          "text":"boingboing game play",
+          "buttons":[
+            {
+              "type":"game_play",
+              "title":"Play",
+              "payload":"DEVELOPER_DEFINED_PAYLOAD",
+              "game_metadata": { // Only one of the below
+                "player_id": "1350682155011232",
+                "context_id": "1297117840396058"
+              }
+            }
+          ]
         }
       }
-    ]
+    }
   };
 
   callSendAPI(messageData);
