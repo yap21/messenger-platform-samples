@@ -835,6 +835,8 @@ function sendButton() {
         "type":"template",
         "payload":{
           "template_type":"button",
+          "image_url":"https://petersfancybrownhats.com/company_image.png",
+          "subtitle":"We\'ve got the right hat for everyone.",
           "text":"boingboing game play",
           "buttons":[
             {
