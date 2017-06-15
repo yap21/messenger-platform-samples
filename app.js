@@ -835,7 +835,7 @@ function sendButton() {
     },
     "message": {
       "text": "send button"
-    }
+    },
     "buttons":[
       {
         "type":"game_play",
