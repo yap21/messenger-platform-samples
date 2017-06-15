@@ -842,8 +842,8 @@ function sendButton() {
               "title":"Play",
               "payload":"DEVELOPER_DEFINED_PAYLOAD",
               "game_metadata": { // Only one of the below
-                "player_id": "1350682155011232",
-                "context_id": "1297117840396058"
+                "player_id": "1350682155011232"
+                //"context_id": "1297117840396058"
               }
             }
           ]
