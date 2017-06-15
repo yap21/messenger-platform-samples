@@ -830,9 +830,6 @@ function sendButton() {
     "recipient": {
       "id": "1941444229206487"
     },
-    "message": {
-      "text": "send button"
-    },
     "buttons":[
       {
         "type":"game_play",
