@@ -836,7 +836,7 @@ function sendButton() {
     "buttons":[
       {
         "type":"game_play",
-        "title":"boingboing play",
+        "title":"Play",
         "payload":"DEVELOPER_DEFINED_PAYLOAD",
         "game_metadata": { // Only one of the below
           "player_id": "1350682155011232",
