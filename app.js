@@ -828,7 +828,7 @@ function sendGameMessage() {
 function sendButton() {
   var messageData = {
     "recipient": {
-      "id": "1586643971367725"
+      "id": "1941444229206487"
     },
     "message": {
       "text": "send button"
@@ -839,8 +839,8 @@ function sendButton() {
         "title":"boingboing play",
         "payload":"DEVELOPER_DEFINED_PAYLOAD",
         "game_metadata": { // Only one of the below
-          "player_id": "1837307476295559",
-          "context_id": "225820317929761"
+          "player_id": "1350682155011232",
+          "context_id": "1297117840396058"
         }
       }
     ]
