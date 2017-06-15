@@ -838,7 +838,7 @@ function sendButton() {
           "elements":[
             {
               "title": "boingboing",
-              "image_url": SERVER_URL + "/assets/1024x1024.png",
+              "image_url": SERVER_URL + "/assets/1200x627.png",
               "subtitle": "We\'ve got the right hat for everyone.",
               "buttons": [
                 {

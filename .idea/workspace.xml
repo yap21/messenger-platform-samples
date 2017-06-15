@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="235d168a-f678-4594-89aa-90d352edf980" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/1200x627.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -48,8 +47,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28104576">
-              <caret line="842" column="26" selection-start-line="842" selection-start-column="26" selection-end-line="842" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.64705884">
+              <caret line="841" column="67" selection-start-line="841" selection-start-column="67" selection-end-line="841" selection-end-column="67" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -521,8 +520,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28104576">
-          <caret line="842" column="26" selection-start-line="842" selection-start-column="26" selection-end-line="842" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.64705884">
+          <caret line="841" column="67" selection-start-line="841" selection-start-column="67" selection-end-line="841" selection-end-column="67" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
