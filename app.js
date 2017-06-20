@@ -828,6 +828,41 @@ function sendGameMessage() {
 function sendButton() {
   var messageData = {
     "recipient": {
+      "id": "1586643971367725"
+    },
+    "message":{
+      "attachment":{
+        "type":"template",
+        "payload":{
+          "template_type":"generic",
+          "elements":[
+            {
+              "title": "boingboing",
+              "image_url": SERVER_URL + "/assets/1200x627.png",
+              "subtitle": "We\'ve got the right hat for everyone.",
+              "buttons": [
+                {
+                  "type": "game_play",
+                  "title": "Play",
+                  "payload": "DEVELOPER_DEFINED_PAYLOAD",
+                  "game_metadata": { // Only one of the below
+                    "player_id": "225820317929761"
+                    //"context_id": "1297117840396058"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  };
+  callSendAPI(messageData);
+}
+
+function sendTamplete() {
+  var messageData = {
+    "recipient": {
       "id": "1941444229206487"
     },
     "message":{
@@ -857,7 +892,6 @@ function sendButton() {
       }
     }
   };
-
   callSendAPI(messageData);
 }
 
